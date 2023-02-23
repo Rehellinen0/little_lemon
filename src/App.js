@@ -6,12 +6,12 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
-      <Header />
+    <div className='mainGrid'>
       <Nav />
+      <Header />
       <Main />
       <Footer />
-    </>
+    </div>
   );
 }
 
