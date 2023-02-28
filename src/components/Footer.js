@@ -3,8 +3,9 @@ import imgUrl from "../images/restaurant.jpg";
 const Footer = () => {
     return (
         <div className="row fillGreen">
-            <footer className="flex-row">
-                <div className="doormat flex-row">
+            <div className="col-2"></div>
+            <footer className="col-8">
+                <div className="doormat">
                     <img src={imgUrl} alt="Restaurant image" />
                     <ul className="p-text">
                         <li className="card-title-text">Doormat Navigation</li>
@@ -34,6 +35,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </footer>
+            <div className="col-2"></div>
         </div>
     )
 
