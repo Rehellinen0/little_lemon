@@ -55,7 +55,7 @@ const CustomersSay = () => {
                 <div className='customerCards'>
                     {customers.map(customer => {
                         return(
-                            <CustomerCard name={customer.name} rating={customer.rating} review={customer.review} imageSrc={customer.imageSrc}/>
+                            <CustomerCard key={customer.id} name={customer.name} rating={customer.rating} review={customer.review} imageSrc={customer.imageSrc}/>
                         )
                     })}
                 </div>

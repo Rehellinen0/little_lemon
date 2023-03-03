@@ -378,6 +378,27 @@ footer li:first-of-type {
   width: min-content;
 }
 
+form{
+  margin: 50px auto;
+  display: grid; 
+  grid-column: auto;
+  max-width: 300px; 
+  gap: 20px;
+}
+
+#submitBtn {
+  width: 100%;
+}
+
+.confirm-box {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--secondaryGrey);
+}
+
+
 @media only screen and (max-width: 1024px) {
   [class*="col-"] {
     width: 100%;

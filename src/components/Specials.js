@@ -57,7 +57,7 @@ const Specials = () => {
                 <div className="cards flex-row">
                     {dishes.map(dish => {
                         return (
-                            <Card name={dish.name} price={dish.price} description={dish.description} imageSrc={dish.getImageSrc()} />
+                            <Card key={dish.id} name={dish.name} price={dish.price} description={dish.description} imageSrc={dish.getImageSrc()} />
                         )
                     })}
                 </div>
