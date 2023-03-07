@@ -13,7 +13,7 @@ const timesReducer = (state, action) => {
       return action.newTimes;
     }
     case 'INITIALIZE': {
-      return action.todayTimes;
+      return action.initialTimes;
     }
     default: {
       return ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
@@ -23,8 +23,8 @@ const timesReducer = (state, action) => {
 
 const initialData = {
   date: "",
-  time: "17:00",
-  guests: 2,
+  time: "",
+  guests: "",
   occasion: "Default"
 }
 
@@ -34,10 +34,9 @@ function App() {
   const navigate = useNavigate();
 
   const initializeTimes = () => {
-    const result = fetchAPI(new Date('2023-03-01'))
     dispatch({ 
       type: "INITIALIZE",
-      todayTimes: result
+      initialTimes: []
     });
   };
 

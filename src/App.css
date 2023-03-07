@@ -123,6 +123,11 @@
   color: var(--secondaryBlack);
 }
 
+.pillBtn:disabled {
+  background-color: var(--secondaryGrey);
+  cursor:not-allowed;
+}
+
 nav {
   padding: 60px 0px;
   margin: 0;
